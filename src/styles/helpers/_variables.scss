@@ -9,6 +9,8 @@ $primary-1:#03a9f4;
 $primary-2:#f75e2e;
 $primary-3:#ecfa4d;
 $primary-4:#656a70;
+$ligth:#fff;
+$dark:#000;
 
 // lighten 1 level
 // $pr1-ligth-1:lighten($primary-1,10%);
@@ -58,17 +60,18 @@ $font-medium:'Poppins-Medium';
 $font-bold:'Poppins-Bold';
 $font-semibild:'Poppins-SemiBold';
 
-$font-normal-1:'OpenSans';
-$font-light-1:'OpenSans-Light';
-$font-bold-1:'OpenSans-Bold';
-$font-semibild-1:'OpenSans-Semibold';
-$font-extrabold-1:'OpenSans-Extrabold';
+$font-general-normal:'OpenSans';
+$font-general-light:'OpenSans-Light';
+$font-general-bold:'OpenSans-Bold';
+$font-general-semibild:'OpenSans-Semibold';
+$font-general-extrabold:'OpenSans-Extrabold';
 
-$font-normal-11:'OpenSans-Italic';
-$font-light-11:'OpenSansLight-Italic';
-$font-bold-11:'OpenSans-BoldItalic';
-$font-semibild-11:'OpenSans-SemiboldItalic';
-$font-extrabold-11:'OpenSans-ExtraboldItalic';
+// secondary font
+$font-secondary-normal:'OpenSans-Italic';
+$font-secondary-light:'OpenSansLight-Italic';
+$font-secondary-bold:'OpenSans-BoldItalic';
+$font-secondary-semibild:'OpenSans-SemiboldItalic';
+$font-secondary-extrabold:'OpenSans-ExtraboldItalic';
 
 
 

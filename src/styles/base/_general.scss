@@ -2,4 +2,39 @@ h1, h2, h3, h4, h5, h6, ul, body {
     margin: 0;
     padding: 0;
 }
-
+// h1{
+//   @extend %box-shadow;
+//   @extend %fonts;
+// }
+// h2{
+//   @extend %box-shadow;
+//   @extend %fonts;
+//   background-color: $pr1-dark-1;
+//   color: blueviolet;
+// }
+// h1{
+//   @include box-shadow;
+// }
+h1{
+    @include font(35px,$font-bold);
+  }
+  h2{
+    @include font(33px,$font-medium,$pr4-dark-2);
+    padding: 10px;
+    &:hover{
+      color: $ligth;
+      background-color: $primary-1;
+    }
+  }
+  h3{
+    @include font(27pt,$font-semibild);
+  }
+  h4{
+    @include font(22pt,$font-medium);
+  }
+  h5{
+    @include font(17pt,$font-medium);
+  }
+  h6{
+    @include font(15pt,$font-medium,$pr4-dark-3);
+  }
