@@ -33,3 +33,25 @@
     color:$color;
     border-radius: 4px;
 }
+@mixin input-element ($bg:$ligth,$border:solid 1px $pr4-ligth-2,$size:13px,$width:320px,$heigth:50px,$font:$font-regular,$color:$primary-4,$outline:0,$padding-left:20px,$border-radius:3px) {
+    background-color: $bg;
+    border: $border;
+    font-size: $size;
+    width: $width;
+    height: $heigth;
+    font-family: $font;
+    color:$color;
+    outline: $outline;
+    padding-left:$padding-left;
+    border-radius:$border-radius;
+}
+@mixin page-number ($bg:$ligth,$width:50px,$font:$font-regular,$heigth:50px,$size:13px,$border:solid 1px $pr4-ligth-2,$outline:0,$border-radius:2px) {
+    background-color: $bg;
+    width: $width;
+    font-family: $font;
+    height: $heigth;
+    font-size: $size;
+    border: $border;
+    outline: $outline;
+    border-radius:$border-radius;
+}
