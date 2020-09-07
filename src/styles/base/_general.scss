@@ -94,7 +94,6 @@ h6 {
   .btn1 {
     @include btn(220px, $primary-2, 50px, $font-semibild);
     text-transform: uppercase;
-    outline: 0 !important;
   
     &:hover {
       background-color: $pr2-ligth-1;
@@ -108,7 +107,6 @@ h6 {
   .btn2 {
     @include btn(280px, $pr1-dark-1, 50px);
     text-transform: capitalize;
-    outline: 0 !important;
   
     &:hover {
       background-color: $pr1-ligth-2;
@@ -122,7 +120,7 @@ h6 {
   .btn3 {
     @include btn(200px, $pr1-dark-1, 50px);
     text-transform: capitalize;
-    outline: 0 !important;
+    font-size: 14px;
   
     &:hover {
       background-color: $pr1-ligth-2;
@@ -136,7 +134,6 @@ h6 {
   .btn4 {
     @include btn(220px, $ligth, 50px, $font-semibild, 1px solid $primary-2, $primary-2);
     text-transform: uppercase;
-    outline: 0 !important;
   
     &:hover {
       background-color: $pr2-ligth-1;
@@ -154,7 +151,6 @@ h6 {
   .btn5 {
     @include btn(200px, $ligth, 50px, $font-medium, 1px solid $pr1-dark-1, $pr1-dark-1);
     text-transform: capitalize;
-    outline: 0 !important;
   
     &:hover {
       background-color: $pr1-ligth-2;
@@ -174,7 +170,6 @@ h6 {
   .button1 {
     @include btn(150px, $primary-2, 40px);
     text-transform: uppercase;
-    outline: 0 !important;
   
     &:hover {
       background-color: $pr2-ligth-1;
@@ -188,7 +183,6 @@ h6 {
   .button2 {
     @include btn(170px, $pr1-dark-1, 40px);
     text-transform: capitalize;
-    outline: 0 !important;
   
     &:hover {
       background-color: $pr1-ligth-2;
@@ -202,7 +196,6 @@ h6 {
   .button3 {
     @include btn(150px, $pr1-dark-1, 40px);
     text-transform: capitalize;
-    outline: 0 !important;
   
     &:hover {
       background-color: $pr1-ligth-2;
@@ -216,7 +209,6 @@ h6 {
   .button4 {
     @include btn(150px, $ligth, 40px, $font-medium, 1px solid $primary-2, $primary-2);
     text-transform: capitalize;
-    outline: 0 !important;
   
     &:hover {
       background-color: $pr2-ligth-1;
@@ -234,7 +226,6 @@ h6 {
   .button5 {
     @include btn(150px, $ligth, 40px, $font-medium, 1px solid $pr1-dark-1, $pr1-dark-1);
     text-transform: capitalize;
-    outline: 0 !important;
   
     &:hover {
       background-color: $pr1-ligth-2;
@@ -248,6 +239,386 @@ h6 {
       color: $ligth;
       border: none;
     }
+  }
+  .inputfield {
+    @include input-element ($pr4-ligth-3);
+  
+    &:hover {
+      @include input-element;
+    }
+  
+    &:active {
+      @include input-element ($ligth, solid 1px $primary-1);
+    }
+  }
+  
+  .custom-select {
+    @include input-element ($pr4-ligth-3);
+  
+    &:hover {
+      @include input-element;
+    }
+  
+    &:active {
+      @include input-element ($ligth, solid 1px $primary-1);
+      box-shadow: 0 0 0 0.2rem $primary-1;
+    }
+  }
+  
+  .success {
+    display: inline-block;
+    position: relative;
+    input {
+      @include input-element ($ligth, solid 1px #09a912, 13px, 320px, 50px, $font-regular, #09a912);
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 11px;
+      height: 6px;
+      border: solid 1px #09a912;
+      border-width: 0 0 1px 1px;
+      position: absolute;
+      right: 18px;
+      top: 20px;
+      transform: rotate(-45deg);
+    }
+  }
+  .error-enter {
+    display: inline-block;
+    position: relative;
+    input {
+      @include input-element ($ligth, solid 1px $primary-2, 13px, 320px, 50px, $font-regular, $primary-2);
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 15px;
+      background-color: $primary-2;
+      position: absolute;
+      right: 18px;
+      top: 17px;
+      transform: rotate(45deg);
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 15px;
+      background-color: $primary-2;
+      position: absolute;
+      right: 18px;
+      top: 17px;
+      transform: rotate(-45deg);
+    }
+  }
+  
+  .number-of-pages{
+    display: flex;
+  }
+  .minus{
+    display: inline-block;
+    position: relative;
+    input{
+      @include page-number;
+    }
+      &::before {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 15px;
+        background-color: $primary-4;
+        position: absolute;
+        right: 25px;
+        top: 17px;
+        transform: rotate(-90deg);
+      }
+  }
+  .middle-text{
+    @include page-number($pr4-ligth-3,100px);
+    border-right: none;
+    border-left: none;
+    text-align: center;
+    color: $primary-4;
+  }
+  .plus{
+    display: inline-block;
+    position: relative;
+    input{
+      @include page-number;
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 15px;
+      background-color: $primary-4;
+      position: absolute;
+      right: 25px;
+      top: 17px;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 15px;
+      background-color: $primary-4;
+      position: absolute;
+      right: 25px;
+      top: 17px;
+      transform: rotate(-90deg);
+    }
+  }
+  
+  
+  // RADIO
+  .radio[type=radio] + label {
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .radio[type=radio] {
+    display: none;
+  }
+  
+  .radio[type=radio] + label:before {
+    content: "";
+    border: 2px solid $pr4-ligth-2;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .radio[type=radio]:checked + label:before {
+    background-color: $ligth;
+    border-color: $primary-1;
+  }
+  .radio[type=radio]:hover + label:before {
+    background-color: none;
+    border-color: $primary-1;
+  }
+  
+  .radio[type=radio]:disabled + label:before {
+    background-color: $ligth;
+    border-color: $pr4-ligth-2;
+  }
+  .radio[type=radio]:checked:disabled + label:before {
+    background-color: $ligth;
+    border-color: $pr4-ligth-2;
+  }
+  .radio[type=radio]:checked + label:after {
+    content: "";
+    background-color: $primary-1;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+  .radio[type=radio]:checked:disabled + label:after {
+    content: "";
+    background-color: $pr4-ligth-2;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+  
+  // CHECKBOX
+  .checkbox[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+    position: relative;
+  }
+  
+  .checkbox[type=checkbox] {
+    display: none;
+  }
+  
+  .checkbox[type=checkbox] + label:before {
+    content: "";
+    border: 2px solid $pr4-ligth-2;
+    border-radius: 2px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  .checkbox[type=checkbox]:hover + label:before {
+    background-color: $ligth;
+    border-color: $primary-1;
+  }
+  .checkbox[type=checkbox]:checked + label:before {
+    background-color: $primary-1;
+    border-color: $primary-1;
+  }
+  .checkbox[type=checkbox]:disabled + label:before {
+    background-color: $pr4-ligth-2;
+    border-color: $pr4-ligth-2;
+  }
+  .checkbox[type=checkbox]:checked:disabled + label:before {
+    background-color: $pr4-ligth-2;
+    border-color: $pr4-ligth-2;
+  }
+  .checkbox[type=checkbox]:checked + label:after {
+    content: "";
+    border: 2px solid $ligth;
+    border-style: none none solid solid;
+    display: inline-block;
+    width: 11px;
+    height: 6px;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    transition: .2s;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 7.5px;
+    top: 8px;
+  }
+  .checkbox[type=checkbox]:checked:disabled + label:after {
+    content: "";
+    border: 2px solid $ligth;
+    border-style: none none solid solid;
+    display: inline-block;
+    width: 11px;
+    height: 6px;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    transition: .2s;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 7.5px;
+    top: 8px;
+  }
+  
+  // TABS
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: $primary-2;
+    background-color: transparent;
+    border: solid 2px;
+    border-color: transparent transparent $primary-2;
+  }
+  .nav-link:hover {
+    border-style: none none solid;
+  }
+  .nav-tabs a{
+    color: $pr4-ligth-1;
+    font-size: 15px;
+    font-family: $font-regular;
+  }
+  .tab-content{
+    color: $pr4-dark-1;
+    font-size: 15px;
+    font-family: $font-regular;
+    padding-top: 25px;
+  }
+  
+  
+  // pagination
+  .pagination {
+    display: inline-block;
+  }
+  .pagination a {
+    color: $pr4-ligth-1;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .pagination a.active {
+    background-color: $primary-1;
+    color:$ligth;
+    border-radius:50%;
+  }
+  .pagination a:hover:not(.active) {
+    background-color: $primary-1;
+    color:$ligth;
+    border-radius:50%;
+  }
+  
+    // dotted pagination
+    .dotted-pagination {
+      display: flex;
+    }
+   .dotted-pagination .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $pr4-ligth-1;
+      margin-left: 10px;
+    }
+   .dotted-pagination .dot:hover {
+      background-color: $ligth;
+      border: solid 2px $primary-1;
+      cursor: pointer;
+    }
+  
+  
+  // Popup window
+  .info-popup{
+    padding: 30px 25px;
+    width: 320px;
+    font-family: $font-light;
+    font-size: 13px;
+    color: $pr4-dark-1;
+    border: solid 1px $pr4-dark-2;
+  }
+  
+  // Social pics
+  // normal
+  .fa-facebook-f, .fa-twitter, .fa-pinterest-p, .fa-instagram{
+    color: $pr4-ligth-1;
+    font-size: 15px;
+  }
+  .fa-facebook-f:hover{
+    color: $pr1-dark-1;
+  }
+  .fa-twitter:hover{
+    color: $primary-1;
+  }
+  .fa-pinterest-p:hover{
+    color: #c1182a;
+  }
+  .fa-instagram:hover{
+    color: #de4b39;
+  }
+  // with circles
+  .social{
+    display: flex;
+  }
+  .social-circle{
+    border: solid 1px $ligth;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $primary-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-circle i{
+    color: $ligth;
+  }
+  .social-circle:hover{
+    border: solid 1px $pr1-dark-1;
+    background-color: $pr1-dark-1;
+  }
+  .social-circle i:hover{
+    color: $ligth;
   }
 
 

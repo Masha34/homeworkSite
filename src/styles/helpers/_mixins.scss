@@ -32,6 +32,7 @@
     border:$border;
     color:$color;
     border-radius: 4px;
+    outline: 0 !important;
 }
 @mixin input-element ($bg:$ligth,$border:solid 1px $pr4-ligth-2,$size:13px,$width:320px,$heigth:50px,$font:$font-regular,$color:$primary-4,$outline:0,$padding-left:20px,$border-radius:3px) {
     background-color: $bg;

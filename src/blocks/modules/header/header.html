@@ -1,125 +1,173 @@
-<div class="container">
-    <form action="">
-        <input class="inputfield" type="text" placeholder="Placeholder text">
+<header>
+    <div class="container-fluid bg-header">
+        <section class="container header">
+            <div class="row">
+                <a class="logo col-xl-4 col-lg-4 col-md-3 d-none d-md-inline" href="#">
+                    <img src="../../../img/bg-header-icon-logo.png" alt="">
+                    <span>Blue</span><span class="essay">essay</span><span>site</span><span class="net">.net</span>
+                    <p>Providing Custom Writing Services</p>
+                </a>
+                <nav class="menu col-xl-4 col-lg-4 col-md-5 d-none d-md-flex">
+                    <ul>
+                        <li>
+                            <div class="menu-1">
+                                <div class="dropdown1">
+                                    <button class="dropbtn1">Services
+                                        <span class="d4"></span>
+                                    </button>
+                                    <div class="dropdown-content1">
+                                        <a href="#">Writing</a>
+                                        <a href="#">Typing</a>
+                                        <a href="#">Creating collage</a>
+                                        <a href="#">Creating front page</a>
+                                        <a href="#">Finding mistakes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-1">
+                                <div class="dropdown1">
+                                    <button class="dropbtn1">About us
+                                        <span class="d4"></span>
+                                    </button>
+                                    <div class="dropdown-content1">
+                                        <a href="#">Our core value</a>
+                                        <a href="#">Our target</a>
+                                        <a href="#">Our mission</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-1">
+                                <div class="dropdown1">
+                                    <button class="dropbtn1">How it works
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
 
-        <select class="custom-select">
-            <option selected>Placeholder text</option>
-            <option value="1">Here's an option</option>
-            <option value="2">Another option1</option>
-            <option value="2">Another option2</option>
-            <option value="2">Another option3</option>
-            <option value="3">Another option4</option>
-        </select>
+                <div class="contact-block col-xl-4 col-lg-4 col-md-4 d-none d-md-flex">
+                    <div class="phone-icon">
+                        <a href=""><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                    <div class="button-block">
+                        <button class="button3">sign in</button>
+                        <button class="button1">order</button>
+                    </div>
 
-        <div class="success">
-            <input type="text">
-        </div>
+                    <div class="dropdown">
+                        <div onclick="myFunction()" class="dropbtn">
+                            <span class="burger"></span>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Home</a>
+                            <a href="#">How it works</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Text</a>
+                            <a href="#">Why us</a>
+                            <a href="#">Faq</a>
+                            <a href="#">Contacts</a>
+                        </div>
+                    </div>
+                    <script>
+                        /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show");
+                        }
 
-        <div class="error-enter">
-            <input type="text">
-        </div>
-
-        <div class="number-of-pages">
-            <div class="minus">
-                <input type="button">
+                        // Close the dropdown menu if the user clicks outside of it
+                        window.onclick = function (event) {
+                            if (!event.target.matches('.dropbtn')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                    var openDropdown = dropdowns[i];
+                                    if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                    }
+                                }
+                            }
+                        }
+                    </script>
+                </div>
             </div>
-            <input class="middle-text" type="text" placeholder="2">
-            <div class="plus">
-                <input type="button">
+
+
+            <!-- Mobile -->
+            <div class="row d-sm-none d-flex logo-min">
+                <div class="col-5 logo logo-mob">
+                    <img class="img-mob" src="../../../img/bg-header-icon-logo.png" alt="">
+                    <span class=>Blue</span><span class="essay">essay</span><span>site</span><span
+                        class="net">.net</span>
+                    </a>
+                </div>
+
+                <div class="col-7 menu-mobile">
+                    <div class="button-block">
+                        <button class="button3 btn-mob">sign in</button>
+                        <button class="button1 btn-mob">order</button>
+                    </div>
+
+                    <div class="dropdown">
+                        <div onclick="myFunction()" class="dropbtn">
+                            <span class="burger"></span>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Home</a>
+                            <a href="#">How it works</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Text</a>
+                            <a href="#">Why us</a>
+                            <a href="#">Faq</a>
+                            <a href="#">Contacts</a>
+                        </div>
+                    </div>
+                    <script>
+                        /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show");
+                        }
+
+                        // Close the dropdown menu if the user clicks outside of it
+                        window.onclick = function (event) {
+                            if (!event.target.matches('.dropbtn')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                    var openDropdown = dropdowns[i];
+                                    if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                    }
+                                }
+                            }
+                        }
+                    </script>
+                </div>
             </div>
-        </div>
+    </div>
+    </section>
+    </div>
+</header>
 
-        <!-- RADIO checked disabled-->
-        <form>
-            <input class="radio" type="radio" checke disable id="fruit1" name="fruit-1" value="Apple">
-            <label for="fruit1"></label>
-        </form>
-
-        <!-- CHECKBOX checked disabled-->
-        <form>
-            <input class="checkbox" type="checkbox" id="fruit1" name="fruit-1" value="Apple">
-            <label for="fruit1"></label>
-        </form>
+ <!-- <div class="pulse2"></div>
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div> -->
 
 
-        <!-- TABS -->
-        <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                    aria-controls="nav-home" aria-selected="true">Tabname1</a>
-                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                    aria-controls="nav-profile" aria-selected="false">Tabname2</a>
-                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-                    aria-controls="nav-contact" aria-selected="false">Tabname3</a>
-                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-                    aria-controls="nav-contact" aria-selected="false">Tabname4</a>
-            </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                Placeholder text</div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Placeholder
-                text</div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Placeholder
-                text</div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Placeholder
-                text</div>
-        </div>
 
 
-        <!-- pagination -->
-        <div class="pagination">
-            <a href="#">&#60;</a>
-            <a href="#">1</a>
-            <a class="active" href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-            <a href="#">7</a>
-            <a href="#">8</a>
-            <a href="#">9</a>
-            <a href="#">&#62;</a>
-        </div>
-
-        <!-- dotted pagination -->
-        <div class="dotted-pagination">
-            <div class="dot"><a class="active" href="#"></a></div>
-            <div class="dot"><a href="#"></a></div>
-            <div class="dot"><a href="#"></a></div>
-            <div class="dot"><a href="#"></a></div>
-            <div class="dot"><a href="#"></a></div>
-            <div class="dot"><a href="#"></a></div>
-        </div>
-
-        <!-- Popup window -->
-        <div class="info-popup">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quos, optio incidunt voluptas quod, qui
-                totam consequatur assumenda consequuntur placeat id sequi architecto iste atque! Molestias magnam
-                maiores sapiente quae temporibus ut aliquam eligendi odit, dignissimos repudiandae, tempore alias?</p>
-        </div>
 
 
-        <!-- Social pics  -->
-        <!-- normal -->
-        <a href=""><i class="fab fa-facebook-f"></i></a>
-        <a href=""><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fab fa-pinterest-p"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
 
-        <!-- with circles -->
-        <div class="social">
-        <div class="social-circle">
-            <a href=""><i class="fab fa-facebook-f facebook-circle"></i></a>
-        </div>
-        <div class="social-circle">
-            <a href=""><i class="fab fa-twitter twitter-circle"></i></a></div>
-        <div class="social-circle">
-            <a href=""><i class="fab fa-pinterest-p pinterest-circle"></i></a></div>
-        <div class="social-circle">
-            <a href=""><i class="fab fa-instagram instagram-circle"></i></a></div>
-        </div>
-</div>
+
+
+
+
 
 
 
@@ -239,3 +287,126 @@
     <option value="2">Two</option>
     <option value="3">Three</option>
 </select> -->
+
+<!-- <div class="container">
+    <form action="">
+        <input class="inputfield" type="text" placeholder="Placeholder text">
+
+        <select class="custom-select">
+            <option selected>Placeholder text</option>
+            <option value="1">Here's an option</option>
+            <option value="2">Another option1</option>
+            <option value="2">Another option2</option>
+            <option value="2">Another option3</option>
+            <option value="3">Another option4</option>
+        </select>
+
+        <div class="success">
+            <input type="text">
+        </div>
+
+        <div class="error-enter">
+            <input type="text">
+        </div>
+
+        <div class="number-of-pages">
+            <div class="minus">
+                <input type="button">
+            </div>
+            <input class="middle-text" type="text" placeholder="2">
+            <div class="plus">
+                <input type="button">
+            </div>
+        </div> -->
+
+<!-- RADIO checked disabled-->
+<!-- <form>
+            <input class="radio" type="radio" checke disable id="fruit1" name="fruit-1" value="Apple">
+            <label for="fruit1"></label>
+        </form> -->
+
+<!-- CHECKBOX checked disabled-->
+<!-- <form>
+            <input class="checkbox" type="checkbox" id="fruit1" name="fruit-1" value="Apple">
+            <label for="fruit1"></label>
+        </form> -->
+
+
+<!-- TABS -->
+<!-- <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                    aria-controls="nav-home" aria-selected="true">Tabname1</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">Tabname2</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                    aria-controls="nav-contact" aria-selected="false">Tabname3</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                    aria-controls="nav-contact" aria-selected="false">Tabname4</a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                Placeholder text</div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Placeholder
+                text</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Placeholder
+                text</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Placeholder
+                text</div>
+        </div> -->
+
+
+<!-- pagination -->
+<!-- <div class="pagination">
+            <a href="#">&#60;</a>
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">&#62;</a>
+        </div> -->
+
+<!-- dotted pagination -->
+<!-- <div class="dotted-pagination">
+            <div class="dot"><a class="active" href="#"></a></div>
+            <div class="dot"><a href="#"></a></div>
+            <div class="dot"><a href="#"></a></div>
+            <div class="dot"><a href="#"></a></div>
+            <div class="dot"><a href="#"></a></div>
+            <div class="dot"><a href="#"></a></div>
+        </div> -->
+
+<!-- Popup window -->
+<!-- <div class="info-popup">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quos, optio incidunt voluptas quod, qui
+                totam consequatur assumenda consequuntur placeat id sequi architecto iste atque! Molestias magnam
+                maiores sapiente quae temporibus ut aliquam eligendi odit, dignissimos repudiandae, tempore alias?</p>
+        </div> -->
+
+
+<!-- Social pics  -->
+<!-- normal -->
+<!-- <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-pinterest-p"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a> -->
+
+<!-- with circles -->
+<!-- <div class="social">
+        <div class="social-circle">
+            <a href=""><i class="fab fa-facebook-f facebook-circle"></i></a>
+        </div>
+        <div class="social-circle">
+            <a href=""><i class="fab fa-twitter twitter-circle"></i></a></div>
+        <div class="social-circle">
+            <a href=""><i class="fab fa-pinterest-p pinterest-circle"></i></a></div>
+        <div class="social-circle">
+            <a href=""><i class="fab fa-instagram instagram-circle"></i></a></div>
+        </div>
+</div> -->
