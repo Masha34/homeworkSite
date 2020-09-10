@@ -1,29 +1,76 @@
-// .bg-welcome .row{
-//     padding: 40px 15px 95px 40px;
+.bg-welcome{
+    margin-top: 97px;
+}
+.bg-welcome .row{
+    padding: 40px 15px 90px;
+}
+.bg-welcome .picture-block{
+    padding-right: 35px;
+}
+.bg-welcome .picture{
+    background-color: $pr1-ligth-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.bg-welcome .text{
+    position: absolute;
+    top: 90px;
+}
+.bg-welcome .picture p{
+    @include font(27px,$font-bold,$pr1-dark-1);
+    text-transform: uppercase;
+}
+.bg-welcome img{
+    padding-top: 65px;
+}
+.text-block h6{
+    font-family: $font-regular;
+    color: $pr1-dark-1;
+}
+.text-block h1{
+    font-family: $font-regular;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
 
-// }
-// .bg-welcome .picture-block{
-// padding-right: 35px;
-// }
-// .bg-welcome .picture{
-// background-color: $pr1-ligth-3;
-// }
-// .bg-welcome img{
-// padding: 65px 105px 0 120px;
-// }
-// h6{
-//     font-family: $font-regular;
-//     color: $pr1-dark-1;
-//     font-size: 15px;
-// }
-// h1{
-//     font-family: $font-bold;
-//     color: $pr4-dark-3;
-//     font-size: 35px;
-// }
-// p{
-//     font-family: $font-regular;
-//     color: $pr4-dark-1;
-//     font-size: 14px;
-// }
-
+@media (max-width: 1200px) {
+    .bg-welcome{
+        margin-top: 70px;
+    }
+    .text-block h1{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        font-size: 25px;
+    }
+    .text-block p{
+        font-size: 13px;
+    }
+    }
+  
+    @media (max-width: 992px) {
+        .bg-welcome{
+            margin-top: 50px;
+        }
+        .bg-welcome .row{
+            padding: 15px 0 50px;
+        }
+        .text-block h6{
+       font-size: 13px;
+        }
+        .text-block h1{
+            font-size: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .text-block p{
+            font-size: 12px;
+        }
+      }
+      @media (max-width: 767px) {
+        .bg-welcome{
+            margin-top: 340px;
+        }
+      
+      }

@@ -1,81 +1,156 @@
-// .bg-banner {
-//     background: url(../../../img/bg-banner-city.png) no-repeat $pr1-ligth-3;
-//       background-size: 100%;
-//     padding-top: 12.7%;
+.bg-banner {
+    background: url(../../../img/bg-banner-city.png) no-repeat $pr1-ligth-3;
+    background-size: 100%;
+    background-position-y: 100px;
+    background-position-x: 20px;
+    padding: 8% 15px 27px;
+}
+.bg-banner h1 {
+    font-size: 47px;
+    font-family: $font-medium;
+    color: $primary-1;
+}
+.bg-banner h1 .part-2 {
+    color: $pr4-dark-2;
+}
+.girl-block{
+    position: relative;
+}
+.girl-block .girl{
+    position: absolute;
+    top: -10px;
+    left: -25px;
+    background-size: 50%;
+}
+.girl-block img{
+    width: 64%;
+}
+.bg-banner .btn1 {
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+.banner{
+    position: relative;
+}
+.select-form {
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-1;
+    padding: 30px 35px 35px;
+    position: absolute;
+    top: 329px;
+}
+
+.select-form .custom-select {
+    @include input-element($ligth, solid 1px $pr4-ligth-2, 13px, 200px, 50px);
+}
+
+.select-form h6 {
+    @include font(13px, $font-medium, $ligth);
+    padding-bottom: 10px;
+}
+.select-form .form-btn{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+@media (max-width: 1200px) {
+    .bg-banner h1 {
+        font-size: 35px;
+    }
+    .select-form {
+        padding: 20px 40px 20px;
+    }
+    .select-form {
+        top: 280px;
+    }
+    .select-form .custom-select {
+        @include input-element($ligth, solid 1px $pr4-ligth-2, 11px, 120px, 30px,$font-regular,$primary-4,0,5px);
+    }
+    
+    .select-form h6 {
+        @include font(12px, $font-medium, $ligth);
+        padding-bottom: 10px;
+    }
+    .select-form .number-of-pages .middle-text {
+        @include page-number($ligth,70px,$font-regular,30px,12px);
+    }
+    .select-form .minus{
+            display: inline-block;
+            position: relative;
+            input{
+                @include page-number($ligth,25px,$font-regular,30px,12px);
+            }
+              &::before {
+                height: 7px;
+                right: 12px;
+                top: 12px;
+              }
+          }
+          .select-form .plus{
+            display: inline-block;
+            position: relative;
+            input{
+                @include page-number($ligth,25px,$font-regular,30px,12px);
+            }
+            &::before {
+              height: 7px;
+              right: 12px;
+              top: 12px;
+            }
+            &::after {
+              height: 7px;
+              right: 12px;
+              top: 12px;
+            }
+          }
+    .select-form .btn3{
+       width: 120px;
+       height: 30px;
+    }
+}
   
-//     background-position-y: 350px;
-//     background-position-x: center;
-
-// }
-
-// .bg-banner h1 {
-//     font-size: 47px;
-//     font-family: $font-medium;
-//     color: $primary-1;
-
-// }
-
-// .bg-banner h1 .part-2 {
-//     color: $pr4-dark-2;
-// }
-
-// .bg-banner .btn1 {
-//     margin-top: 25px;
-//     margin-bottom: 75px;
-// }
-
-// .ggg {
-//     position: relative;
-//     top: -340px;
-//     left: 20px;
-// }
-
-
-// .select-form {
-//     display: flex;
-//     justify-content: space-between;
-//     background-color: $primary-1;
-//     padding: 30px 35px 35px;
-// }
-
-// .select-form .custom-select {
-//     @include input-element($ligth, solid 1px $pr4-ligth-2, 13px, 200px, 50px);
-// }
-
-// .select-form h6 {
-//     @include font(13px, $font-medium, $ligth);
-//     padding-bottom: 10px;
-// }
-// .select-form .form-btn{
-//     display: flex;
-//     align-items: flex-end;
-//     padding-bottom: 5px;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// @media (min-width: 1200px){
-//   .contact-info .row p:first-child{
-//       text-align: left;
-//   }
-//   .contact-info p:last-child{
-//       text-align: right;
-//   }
-// }
-// @media (min-width: 992px) {
-//   .sales {
-//     text-align: right;
-//   }
-// }
-//
+@media (max-width: 992px) {
+    .bg-banner h1 {
+        font-size: 35px;
+    }
+    .banner .btn1{
+        width: 150px;
+        height: 40px;
+    }
+    .select-form {
+        top: 260px;
+    }
+}
+@media (max-width: 767px) {
+    .bg-banner h1 {
+        font-size: 25px;
+    }
+    .banner .btn1{
+        width: 130px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .bg-banner h6 {
+        padding-top: 20px;
+    }
+    .select-form {
+    display: block;
+     padding: 0 auto;
+     top: 300px;
+     width: 100%;
+    text-align: center;
+    }
+    .select-form .number-of-pages{
+    display: flex;
+    justify-content: center;
+    }
+    .select-form .form-btn{
+    display: flex;
+    justify-content: center;
+    }
+    .select-form .form-btn{
+    padding-top: 20px;
+    }
+}
+  

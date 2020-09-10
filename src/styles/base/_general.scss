@@ -11,10 +11,10 @@ h2 {
   @include font(33px, $font-medium, $pr4-dark-2);
   padding: 10px;
 
-  &:hover {
-    color: $ligth;
-    background-color: $primary-1;
-  }
+  // &:hover {
+  //   color: $ligth;
+  //   background-color: $primary-1;
+  // }
 }
 
 h3 {
@@ -106,7 +106,7 @@ h6 {
   
   .btn2 {
     @include btn(280px, $pr1-dark-1, 50px);
-    text-transform: capitalize;
+    // text-transform: capitalize;
   
     &:hover {
       background-color: $pr1-ligth-2;
@@ -509,6 +509,7 @@ h6 {
   // TABS
   .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: $primary-2;
+    width: 50px;
     background-color: transparent;
     border: solid 2px;
     border-color: transparent transparent $primary-2;

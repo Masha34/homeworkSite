@@ -1,0 +1,92 @@
+.bg-advantages{
+    background:url(../../../img/bg-advantages.png) no-repeat $primary-1;
+    background-size: 100%;
+    background-position-y: 170px;
+    background-position-x: -120px;
+    padding-top: 3.8%;
+    padding-bottom: 6.2%;  
+}
+.bg-advantages .row{
+  display: flex;
+}
+.bg-advantages h6{
+    font-family: $font-regular;
+    color: $ligth;
+    text-align: center;
+}
+.bg-advantages h2{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    color: $ligth;
+    text-align: center;
+}
+
+.bg-advantages .write{
+    background-color: $ligth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    padding: 40px 35px 45px;
+}
+
+.bg-advantages .bg-circles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 25px;
+    margin: 0 auto;
+}
+.bg-advantages span{
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    background: linear-gradient( -90deg, $primary-2 49%, $pr2-ligth-1 51% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 22px;
+}
+.bg-advantages h5{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.bg-advantages p{
+    margin: 0;
+    text-align: center;  
+}
+.bg-advantages .btn-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding-top: 55px;
+    text-transform: none;
+}
+
+@media (max-width: 1200px) {
+  .bg-advantages h2{
+    font-size: 30px;
+}
+    .menu button{
+      font-size: 9px;
+    }
+    .menu li{
+      margin-right: 30px;
+    }
+    .button3, .button1{
+      width: 80px;
+    }
+    .d4 {
+      border-top: 6px solid $ligth;
+      }
+    }
+    @media (max-width: 767px) {
+      .bg-advantages h2{
+        font-size: 22px;
+    }
+    
+    }
+    
