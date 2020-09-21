@@ -38,6 +38,16 @@ h6 {
   line-height: 22px;
 }
 
+.sprite{
+  display: flex;
+  background-image: url(../../img/sprite.png);
+  background-repeat: no-repeat;
+}
+// .sprite-2{
+//   // display: flex;
+//   background-image: url(../../../img/sprite.png);
+//   // background-repeat: no-repeat;
+// }
 
 .subtitle {
     @include font(20px, $font-medium, $pr4-dark-2);

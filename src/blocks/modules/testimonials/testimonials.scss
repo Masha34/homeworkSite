@@ -1,0 +1,84 @@
+.bg-testimonials {
+    padding-top: 3.8%;
+    padding-bottom: 5%;
+    margin-top: 260px;
+}
+
+.bg-testimonials h6 {
+    text-align: center;
+    @include font(15px, $font-regular, $pr1-dark-1);
+}
+
+.bg-testimonials h2 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.ava {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.bg-testimonials h5 {
+    padding-top: 40px;
+    padding-bottom: 18px;
+    text-align: center;
+    @include font(17px, $font-semibild, $pr1-dark-1);
+}
+.bg-testimonials-ava {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -563px;
+}
+
+.bg-testimonials p {
+    text-align: center;
+    font-family: $font-light;
+    line-height: 22px;
+    padding: 0 20px;
+}
+
+.bg-testimonials .date {
+    font-size: 13px;
+}
+
+
+.left-arrow-block, .right-arrow-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.left-arrow, .right-arrow {
+    width: 50px;
+    height: 50px;
+    border-right: solid 2px $primary-1;
+    border-top: solid 2px $primary-1;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    top: 55px;
+    transform: rotate(-135deg);
+}
+.right-arrow-block {
+    justify-content: flex-end;
+}
+.right-arrow {
+    transform: rotate(45deg);
+}
+
+@media (max-width: 1200px) {
+    .bg-testimonials {
+        margin-top: 290px;
+    }
+}
+@media (max-width: 767px) {
+    .bg-testimonials {
+        margin-top: 40px;
+    }
+}

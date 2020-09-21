@@ -1,0 +1,66 @@
+.bg-banner-work {
+    background: url(../../../img/bg-banner-city.png) no-repeat $pr1-ligth-3;
+    background-size: 100%;
+    background-position-y: -184px;
+    padding: 5.7% 15px 5.7%;
+}
+.bg-banner-work h1{
+    @include font(33px, $font-regular, $pr4-dark-3);
+}
+.bg-banner-work a{
+    @include font(12px, $font-regular, $pr4-dark-3);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu-work {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .menu-work ul{
+    list-style-type: none;
+    display: flex;
+    padding-top: 15px;
+  }
+  .menu-work li{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .menu-work a:hover{
+    font-weight: 700;
+  }
+.small-arrow {
+    width: 8px;
+    height: 8px;
+    border-right: solid 1px $pr4-dark-3;
+    border-top: solid 1px $pr4-dark-3;
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    left: 44px;
+    transform: rotate(45deg);
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+  .bg-banner-work {
+    background-position-y: -125px;
+}
+  }
+@media (max-width: 992px) {
+  .bg-banner-work {
+    background-position-y: -75px;
+}
+  }
+@media (max-width: 767px) {
+  .bg-banner-work {
+    background-position-y: 10px;
+    // padding-bottom: 4%;
+    .bg-banner-work h1{
+     font-style: 29px;
+  }
+}
+  }

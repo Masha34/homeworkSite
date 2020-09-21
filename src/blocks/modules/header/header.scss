@@ -14,25 +14,17 @@
   display: inline;
  }
 .logo span{
-  font-family: $font-logo-2; 
-  color: $ligth;
-  font-size: 30px;
+  @include font(30px, $font-logo-2, $ligth);
  }
 .logo .essay{
-  font-family: $font-light;
-  color: #ecfa4d;
-  font-size: 20px;
+  @include font(21px, $font-light, #ecfa4d);
   text-transform: uppercase;
 }
 .logo .net{
-  font-family: $font-light;
-  color:  $ligth;
-  font-size: 13px;
+  @include font(13px, $font-light, $ligth);
 }
 .logo p{
-  font-family: $font-general-normal;
-  color: $ligth;
-  font-size: 13px;
+  @include font(13px, $font-general-normal, $ligth);
   margin: 0;
   position: relative;
   top: -5px;
@@ -52,18 +44,25 @@
 .menu li:last-child{
   margin-right: 0;
 }
-.menu button:hover{
+.menu .dropbtn1:hover{
   color:  #ecfa4d;
+  cursor: pointer;
 }
-.menu button:hover .d4{
+.menu .dropbtn1:hover .d4{
   border-top: 8px solid #ecfa4d;
+}
+.menu .dropbtn1 a{
+  color: $ligth;
+}
+.menu .dropbtn1 a:hover{
+  color:  #ecfa4d;
 }
 .d4 {
   width: 0; 
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 8px solid $ligth;
+  border-top: 7px solid $ligth;
   margin-left: 10px;
   }
 
@@ -223,7 +222,7 @@
 }
 
 @media (max-width: 1200px) {
-  .menu button{
+  .menu .dropbtn1{
     font-size: 9px;
   }
   .menu li{
@@ -260,9 +259,6 @@
     .logo p{
       font-size: 7px;
     }
-    .menu button{
-      font-size: 9px;
-    }
     .menu li{
       margin-right: 8px;
     }
@@ -298,9 +294,6 @@
     .logo p{
       font-size: 7px;
     }
-    .menu button{
-      font-size: 9px;
-    }
     .menu li{
       margin-right: 8px;
     }
@@ -326,159 +319,6 @@
       align-items: center;
       padding: 0;
     }
- 
-
-
-
-
-
-
-    // .icon{
-//   position: absolute; 
-//   width: 30px;
-//   height: 30px;
-//   background-size: 180px 180px;
-//   margin: auto; 
-//   top: 0; left: 0; bottom: 0; right: 0;
-//   z-index: 3;
-
-//   -webkit-box-shadow: 
-//     0 0 0 10px   rgba(255,255,255,.2),
-//     0 0 25px 2px rgba(0,0,0,.4),
-// inset 0 0 0 15px   rgba(255,255,155,.4);
-//   -moz-box-shadow: 
-//     0 0 0 10px   rgba(255,255,255,.2),
-//     0 0 25px 2px rgba(0,0,0,.4),
-// inset 0 0 0 15px   rgba(255,255,155,.4);
-//   box-shadow: 
-//     0 0 0 10px   rgba(255,255,255,.2),
-//     0 0 25px 2px rgba(0,0,0,.4),
-// inset 0 0 0 15px   rgba(255,255,155,.4);
-
-//   -webkit-border-radius: 999px; 
-//   -moz-border-radius: 999px;
-//   border-radius: 999px;
-// }
-
-// .pulse2 {
-//   position: absolute;
-//   width: 100px;
-//   height: 100px;
-//   margin: auto; 
-//   top: 0; left: 0; bottom: 0; right: 0;
-//   z-index: 2;
-//   opacity: 0;
-//   border: 2px solid yellow;
-
-//   -webkit-animation: pulsejg2 4s linear infinite;
-//   -moz-animation: pulsejg2 4s linear infinite;
-//   animation: pulsejg2 4s linear infinite;
-//   -webkit-border-radius: 999px;
-//   -moz-border-radius: 999px;
-//   border-radius: 999px;
-//   -webkit-box-shadow: inset 0px 0px 12px 5px yellow;
-//   -moz-box-shadow: inset 0px 0px 12px 5px yellow;
-//   box-shadow: inset 0px 0px 12px 5px yellow;
-//   -moz-box-sizing: border-box;
-//   -webkit-box-sizing: border-box;
-//   box-sizing: border-box;
-// }
-
-// @-webkit-keyframes pulsejg2 {
-//   0% {
-//       -webkit-transform: scale(.6);
-//       opacity: 0;
-//   }
-
-//   40% {
-//       -webkit-transform: scale(.8);
-//       opacity: .05;
-//   }
-
-//   50% {
-//       -webkit-transform: scale(1);
-//       opacity: .1;
-//   }
-
-//   60% {
-//       -webkit-transform: scale(1.1);
-//       opacity: .3;
-//   }
-
-//   80% {
-//       -webkit-transform: scale(1.2);
-//       opacity: .1;
-//   }
-
-//   100% {
-//       -webkit-transform: scale(1.3);
-//       opacity: 0;
-//   }
-// }
-
-// @-moz-keyframes pulsejg2 {
-//   0% {
-//       -moz-transform: scale(.6);
-//       opacity: 0;
-//   }
-
-//   40% {
-//       -moz-transform: scale(.8);
-//       opacity: .05;
-//   }
-
-//   50% {
-//       -moz-transform: scale(1);
-//       opacity: .1;
-//   }
-
-//   60% {
-//       -moz-transform: scale(1.1);
-//       opacity: .3;
-//   }
-
-//   80% {
-//       -moz-transform: scale(1.2);
-//       opacity: .1;
-//   }
-
-//   100% {
-//       -moz-transform: scale(1.3);
-//       opacity: 0;
-//   }
-// }
-
-// @keyframes pulsejg2 {
-//   0% {
-//       transform: scale(.6);
-//       opacity: 0;
-//   }
-
-//   40% {
-//       transform: scale(.8);
-//       opacity: .05;
-//   }
-
-//   50% {
-//       transform: scale(1);
-//       opacity: .1;
-//   }
-
-//   60% {
-//       transform: scale(1.1);
-//       opacity: .3;
-//   }
-
-//   80% {
-//       transform: scale(1.2);
-//       opacity: .1;
-//   }
-
-//   100% {
-//       transform: scale(1.3);
-//       opacity: 0;
-//   }
-// }
 
 
 

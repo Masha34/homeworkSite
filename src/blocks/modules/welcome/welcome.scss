@@ -58,11 +58,13 @@
         }
         .text-block h6{
        font-size: 13px;
+       text-align: center;
         }
         .text-block h1{
             font-size: 20px;
             padding-top: 20px;
             padding-bottom: 20px;
+            text-align: center;
         }
         .text-block p{
             font-size: 12px;
@@ -71,6 +73,12 @@
       @media (max-width: 767px) {
         .bg-welcome{
             margin-top: 340px;
+        }
+        .text-block h6{
+            text-align: center;
+        }
+        .text-block h1{
+            text-align: center;
         }
       
       }

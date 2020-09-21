@@ -20,110 +20,65 @@
     padding-top: 25px;
     padding-bottom: 20px;
 }
+
 .bg-work span{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.bg-work-1 {
+    width: 61px;
+    height: 61px;
+    background-position: -5px -633px;
+}
+
+.bg-work-2 {
+    width: 51px;
+    height: 64px;
+    background-position: -5px -704px;
+}
+
+.bg-work-3 {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -778px;
+}
+
+.bg-work-4 {
+    width: 62px;
+    height: 62px;
+    background-position: -5px -848px;
+}
 .work p{
     text-align: center; 
     font-size: 13px; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// .bg-writing{
-//     background: url(../../img/bg-essay-writing.png) no-repeat #f4f6fa;
-//     background-size: 100%;
-//     padding: 40px 15px 70px;
-// }
-
-// .bg-writing .row{
-//     padding: 0 15px;
-// }
-// .bg-writing .write{
-//     padding: 0;
-// }
-
-// .bg-writing .essay{
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     height: 100%;
-//     justify-content: space-between;
-//     padding: 15px 15px 20px;
-// }
-// 
-
-
-
-
-// /* hover block */
-// .essay{
-//     background-color: rgba(255, 255, 255, 0);
-// }
-// .triangl-1{
-//     width: 0; 
-//     height: 0;
-//     border-top: 30px solid rgba(255, 255, 255, 0);
-//     border-right: 40px solid transparent;
-// }
-// .bg-writing .write:hover{
-//     filter: drop-shadow(4px 4px 7px rgba(155, 182, 190, .75));
-//     cursor: pointer;
-// }
-// .bg-writing .write:hover .essay{
-//     background-color: rgba(255, 255, 255, 1);
-// }
-// .bg-writing .write:hover .triangl-1{
-//     border-top: 30px solid rgba(255, 255, 255, 1);
-// }
-
-// .bg-writing .write:hover span{
-//     background-color: #1b7fd0;
-// }
-// .essay:hover .bg-element12{
-//     width: 81px; height: 63px;
-//     background: url(../../img/css_sprites.png) -10px -541px;  
-// }
-// .essay:hover .bg-element22{
-//     width: 73px; height: 66px;
-//     background: url(../../img/css_sprites.png) -10px -1042px;  
-// }
-// .essay:hover .bg-element3{
-//     width: 61px; height: 63px;
-//     background: url(../../img/css_sprites.png) -10px -705px;  
-// }
-// .essay:hover .bg-element42{
-//     width: 44px; height: 58px;
-//     background: url(../../img/css_sprites.png) -10px -382px;  
-// }
-
-
- 
-
-// .bg-element12{
-//     width: 79px; height: 61px;
-//     background-position: -10px -460px;
-// }
-// .bg-element22{
-//     width: 73px; height: 66px;
-//     background-position: -8px -956px;
-// }
-// .bg-element3{
-//     width: 61px; height: 63px;
-//     background-position: -10px -622px;
-// }
-// .bg-element42 {
-//     width: 44px; height: 58px;
-//     background-position: -10px -304px;
-// }
+.work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+    flex-direction: column;
+    
+}
+.devided-arrow{
+    width: 1px;
+    height: 190px;
+    border-right: solid 2px $pr1-ligth-3;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.arrow-arrow{
+    width: 20px;
+    height: 20px;
+    border-right: solid 2px $pr1-ligth-3;
+    border-top: solid 2px $pr1-ligth-3;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    right: -10px;
+    top: 95px;
+    transform: rotate(45deg);
+}

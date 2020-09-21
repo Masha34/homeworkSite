@@ -1,0 +1,107 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-aside-shape-blue {
+    width: 74px;
+    height: 74px;
+    background-position: -5px -5px;
+}
+
+.sprite-aside-shape-orange {
+    width: 74px;
+    height: 74px;
+    background-position: -5px -89px;
+}
+
+.sprite-bg-advantages-cup {
+    width: 65px;
+    height: 65px;
+    background-position: -5px -173px;
+}
+
+.sprite-bg-advantages-list {
+    width: 63px;
+    height: 64px;
+    background-position: -5px -248px;
+}
+
+.sprite-bg-advantages-pc {
+    width: 77px;
+    height: 77px;
+    background-position: -5px -322px;
+}
+
+.sprite-bg-footer-envalope {
+    width: 31px;
+    height: 31px;
+    background-position: -5px -409px;
+}
+
+.sprite-bg-footer-social-phone {
+    width: 31px;
+    height: 31px;
+    background-position: -5px -450px;
+}
+
+.sprite-bg-header-icon-logo {
+    width: 61px;
+    height: 62px;
+    background-position: -5px -491px;
+}
+
+.sprite-bg-testimonials-ava {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -563px;
+}
+
+.sprite-bg-work-1 {
+    width: 61px;
+    height: 61px;
+    background-position: -5px -633px;
+}
+
+.sprite-bg-work-2 {
+    width: 51px;
+    height: 64px;
+    background-position: -5px -704px;
+}
+
+.sprite-bg-work-3 {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -778px;
+}
+
+.sprite-bg-work-4 {
+    width: 62px;
+    height: 62px;
+    background-position: -5px -848px;
+}
+
+.sprite-list-arrow-in-circle {
+    width: 12px;
+    height: 18px;
+    background-position: -5px -920px;
+}
+
+.sprite-search-icon {
+    width: 14px;
+    height: 14px;
+    background-position: -5px -948px;
+}
+
+.sprite-small-arrow-for-liste {
+    width: 13px;
+    height: 16px;
+    background-position: -5px -972px;
+}
+
+.sprite-watch-icon {
+    width: 12px;
+    height: 17px;
+    background-position: -5px -998px;
+}

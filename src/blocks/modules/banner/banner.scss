@@ -6,9 +6,7 @@
     padding: 8% 15px 27px;
 }
 .bg-banner h1 {
-    font-size: 47px;
-    font-family: $font-medium;
-    color: $primary-1;
+    @include font(47px, $font-medium, $primary-1);
 }
 .bg-banner h1 .part-2 {
     color: $pr4-dark-2;
@@ -40,7 +38,6 @@
     position: absolute;
     top: 329px;
 }
-
 .select-form .custom-select {
     @include input-element($ligth, solid 1px $pr4-ligth-2, 13px, 200px, 50px);
 }
@@ -123,6 +120,7 @@
     }
 }
 @media (max-width: 767px) {
+
     .bg-banner h1 {
         font-size: 25px;
     }
